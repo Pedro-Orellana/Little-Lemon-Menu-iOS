@@ -19,7 +19,18 @@
 		AFC7A8AF2B698E9F00AA1A40 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7A8AE2B698E9F00AA1A40 /* MenuItemsView.swift */; };
 		AFC7A8B12B698EBC00AA1A40 /* MenuItemsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7A8B02B698EBC00AA1A40 /* MenuItemsOptionView.swift */; };
 		AFC7A8B32B698EDE00AA1A40 /* MenuItemsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7A8B22B698EDE00AA1A40 /* MenuItemsDetailsView.swift */; };
+		AFEDFDAE2B7327A500B9B8F6 /* Little_Lemon_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDFDAD2B7327A500B9B8F6 /* Little_Lemon_MenuTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFEDFDAF2B7327A500B9B8F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC7A8952B698C8100AA1A40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC7A89C2B698C8100AA1A40;
+			remoteInfo = "Little Lemon Menu";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF6E16892B71CAE20015EC42 /* MenuItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCard.swift; sourceTree = "<group>"; };
@@ -35,10 +46,19 @@
 		AFC7A8AE2B698E9F00AA1A40 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
 		AFC7A8B02B698EBC00AA1A40 /* MenuItemsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsOptionView.swift; sourceTree = "<group>"; };
 		AFC7A8B22B698EDE00AA1A40 /* MenuItemsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsDetailsView.swift; sourceTree = "<group>"; };
+		AFEDFDAB2B7327A500B9B8F6 /* Little Lemon MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Little Lemon MenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEDFDAD2B7327A500B9B8F6 /* Little_Lemon_MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_Lemon_MenuTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AFC7A89A2B698C8100AA1A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEDFDA82B7327A500B9B8F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC7A89F2B698C8100AA1A40 /* Little Lemon Menu */,
+				AFEDFDAC2B7327A500B9B8F6 /* Little Lemon MenuTests */,
 				AFC7A89E2B698C8100AA1A40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC7A89D2B698C8100AA1A40 /* Little Lemon Menu.app */,
+				AFEDFDAB2B7327A500B9B8F6 /* Little Lemon MenuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +113,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AFEDFDAC2B7327A500B9B8F6 /* Little Lemon MenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFEDFDAD2B7327A500B9B8F6 /* Little_Lemon_MenuTests.swift */,
+			);
+			path = "Little Lemon MenuTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +141,24 @@
 			productReference = AFC7A89D2B698C8100AA1A40 /* Little Lemon Menu.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AFEDFDAA2B7327A500B9B8F6 /* Little Lemon MenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFEDFDB32B7327A500B9B8F6 /* Build configuration list for PBXNativeTarget "Little Lemon MenuTests" */;
+			buildPhases = (
+				AFEDFDA72B7327A500B9B8F6 /* Sources */,
+				AFEDFDA82B7327A500B9B8F6 /* Frameworks */,
+				AFEDFDA92B7327A500B9B8F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFEDFDB02B7327A500B9B8F6 /* PBXTargetDependency */,
+			);
+			name = "Little Lemon MenuTests";
+			productName = "Little Lemon MenuTests";
+			productReference = AFEDFDAB2B7327A500B9B8F6 /* Little Lemon MenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -123,6 +171,10 @@
 				TargetAttributes = {
 					AFC7A89C2B698C8100AA1A40 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					AFEDFDAA2B7327A500B9B8F6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = AFC7A89C2B698C8100AA1A40;
 					};
 				};
 			};
@@ -140,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				AFC7A89C2B698C8100AA1A40 /* Little Lemon Menu */,
+				AFEDFDAA2B7327A500B9B8F6 /* Little Lemon MenuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +204,13 @@
 			files = (
 				AFC7A8A82B698C8200AA1A40 /* Preview Assets.xcassets in Resources */,
 				AFC7A8A52B698C8200AA1A40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFEDFDA92B7327A500B9B8F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +234,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFEDFDA72B7327A500B9B8F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEDFDAE2B7327A500B9B8F6 /* Little_Lemon_MenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFEDFDB02B7327A500B9B8F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC7A89C2B698C8100AA1A40 /* Little Lemon Menu */;
+			targetProxy = AFEDFDAF2B7327A500B9B8F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AFC7A8A92B698C8200AA1A40 /* Debug */ = {
@@ -354,6 +430,42 @@
 			};
 			name = Release;
 		};
+		AFEDFDB12B7327A500B9B8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XZ3V76PGY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pedroapps.Little-Lemon-MenuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Little Lemon Menu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Little Lemon Menu";
+			};
+			name = Debug;
+		};
+		AFEDFDB22B7327A500B9B8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XZ3V76PGY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pedroapps.Little-Lemon-MenuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Little Lemon Menu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Little Lemon Menu";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +483,15 @@
 			buildConfigurations = (
 				AFC7A8AC2B698C8200AA1A40 /* Debug */,
 				AFC7A8AD2B698C8200AA1A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFEDFDB32B7327A500B9B8F6 /* Build configuration list for PBXNativeTarget "Little Lemon MenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFEDFDB12B7327A500B9B8F6 /* Debug */,
+				AFEDFDB22B7327A500B9B8F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

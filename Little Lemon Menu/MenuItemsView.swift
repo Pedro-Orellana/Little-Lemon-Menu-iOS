@@ -24,9 +24,9 @@ struct MenuItemsView: View {
                     Grid {
                         ForEach(viewModel.foodMenuItems, id: \.self.first?.id) { row in
                             GridRow {
-                                MenuItemCard(menuItem: row[0])
-                                MenuItemCard(menuItem: row[1])
-                                MenuItemCard(menuItem: row[2])
+                                ForEach(row) { menuItem in
+                                    MenuItemCard(menuItem: menuItem)
+                                }
                             }
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                            
@@ -42,9 +42,9 @@ struct MenuItemsView: View {
                         ForEach(viewModel.drinkMenuItems, id: \.self.first?.id) { row in
                             
                             GridRow {
-                                MenuItemCard(menuItem: row[0])
-                                MenuItemCard(menuItem: row[1])
-                                MenuItemCard(menuItem: row[2])
+                                ForEach(row) {menuItem in
+                                    MenuItemCard(menuItem: menuItem)
+                                }
                             }
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                         }
@@ -59,9 +59,9 @@ struct MenuItemsView: View {
                         ForEach(viewModel.dessertMenuItems, id: \.self.first?.id) { row in
                             
                             GridRow {
-                                MenuItemCard(menuItem: row[0])
-                                MenuItemCard(menuItem: row[1])
-                                MenuItemCard(menuItem: row[2])
+                                ForEach(row) { menuItem in
+                                    MenuItemCard(menuItem: menuItem)
+                                }
                             }
                             .frame(maxWidth: .infinity)
                             

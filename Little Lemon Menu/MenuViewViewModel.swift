@@ -37,8 +37,9 @@ class MenuViewViewModel: ObservableObject {
                     let menuItem = items[j]
                     subArray.append(menuItem)
                 } else {
-                    let emptyItem = MenuItem(title: "", menuCategory: .Dessert, orderCount: 0, price: 0.0, ingredients: [])
-                    subArray.append(emptyItem)
+//                    let emptyItem = MenuItem(title: "", menuCategory: .Dessert, orderCount: 0, price: 0.0, ingredients: [])
+//                    subArray.append(emptyItem)
+                    break
                 }
             }
             
